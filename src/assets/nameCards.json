@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "firstName": "Sweet",
+      "lastName": "Booboo",
+      "nickName": "Boo",
+      "avatar": null,
+      "title": "Software Engineer",
+      "company": "Google",
+      "city": "San Francisco",
+      "state": "CA",
+      "skills": ["css", "html", "JavaScript"],
+      "interests": "cats",
+      "socialMedias": {
+        "LinkedIn": "https://www.linkedin.com",
+        "Github": "https://github.com",
+        "Twitter": "https://twitter.com",
+        "Website": "https://www.awwwards.com"
+      }
+    }
+  ]
+}
