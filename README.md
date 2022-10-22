@@ -7,11 +7,11 @@
 
 ## Roadmap
 
-Here's a snippet of what's currently ✅ available or ❌ unavailable and what we have on our radar for the ⏩future:
+Here's a snippet of what's currently ✅ available or ❌ unavailable, and what we have on our radar for the ⏩future:
 
 Current Features| Future Roadmap |
 |:--|:--|
-❌ Payment Transaction <br>  | ⏩ Sign up/ login <br> ⏩ Profile Edit <br> ⏩ Online name cards <br> 
+<br>  | ⏩ Sign up/ login <br> ⏩ Profile Edit <br> ⏩ Online name cards <br> 
 
 ## Design Document
 You can find our design document [here](https://docs.google.com/document/d/1kbjxt3LQCJ6zL8TL6YDkc6zvmJGwN3lqoU6JE__83i0/edit).
