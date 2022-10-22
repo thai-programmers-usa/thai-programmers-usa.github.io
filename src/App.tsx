@@ -5,7 +5,7 @@ function App() {
   const { HOME, LOGIN, NAME_CARDS } = URL_PATHS;
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className='App'>
         <header>Thai Programmers in USA</header>
         <nav>
           <Link to={HOME}>Home</Link>
@@ -14,6 +14,7 @@ function App() {
           <br />
           <Link to={NAME_CARDS}>Name Cards</Link>
         </nav>
+        <a href='#'>See Our Name Cards</a>
       </div>
       <Router />
     </BrowserRouter>
