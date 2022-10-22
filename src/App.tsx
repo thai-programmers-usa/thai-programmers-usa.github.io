@@ -3,21 +3,30 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import NameCards from './pages/NameCards';
 
+const URL_PATHS = {
+  HOME: '/',
+  LOGIN: 'login',
+  NAME_CARDS: 'name-cards',
+};
+
 function App() {
+  const { HOME, LOGIN, NAME_CARDS } = URL_PATHS;
   return (
     <BrowserRouter>
       <div className="App">
         <header>Thai Programmers in USA</header>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="name-cards">Login</Link>
-          <Link to="name-cards">Name Cards</Link>
+          <Link to={HOME}>Home</Link>
+          <br />
+          <Link to={LOGIN}>Login</Link>
+          <br />
+          <Link to={NAME_CARDS}>Name Cards</Link>
         </nav>
       </div>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/" element={<Login />} />
-        <Route path="/" element={<NameCards />} />
+        <Route path={HOME} element={<Home />} />
+        <Route path={LOGIN} element={<Login />} />
+        <Route path={NAME_CARDS} element={<NameCards />} />
       </Routes>
     </BrowserRouter>
   );
