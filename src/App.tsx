@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@emotion/react';
+import { CssBaseline } from '@mui/material';
 import { BrowserRouter, Link } from 'react-router-dom';
 import Router, { URL_PATHS } from './pages/Router';
 import { theme } from './theme';
@@ -7,6 +8,7 @@ function App() {
   const { HOME, LOGIN, NAME_CARDS } = URL_PATHS;
   return (
     <BrowserRouter>
+      <CssBaseline />
       <ThemeProvider theme={theme}>
         <div className="App">
           <header>Thai Programmers in USA</header>
