@@ -17,6 +17,15 @@
       "github": "https://github.com/KateChantha",
       "linkedin": "https://www.linkedin.com/in/kate-chanthakaew/",
       "avatar": null
+    },
+    {
+      "id": 3,
+      "firstName": "Bay",
+      "lastName": "Chairangsaris",
+      "title": "Frontend Engineer",
+      "github": "https://github.com/BayLadyCoder",
+      "linkedin": "https://www.linkedin.com/in/bayladycoder/",
+      "avatar": null
     }
   ]
 }
