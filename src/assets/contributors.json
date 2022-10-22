@@ -8,6 +8,15 @@
       "github": "www.github.com",
       "linkedin": "www.linkedin.com",
       "avatar": null
+    },
+    {
+      "id": 2,
+      "firstName": "Kate",
+      "lastName": "Chantha",
+      "title": "Full Stack Engineer",
+      "github": "https://github.com/KateChantha",
+      "linkedin": "https://www.linkedin.com/in/kate-chanthakaew/",
+      "avatar": null
     }
   ]
 }
