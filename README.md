@@ -1,3 +1,21 @@
+# Thai Programmers USA
+[thai-programmers-usa](https://thai-programmers-usa.github.io) is an open source application for Thai programmers in USA learn how to contribute to open source project. It is run by a nonprofit to help Thai people in USA transition into tech. You can find us on [Facebook](https://www.facebook.com/groups/thaiprogrammersinusa).
+
+### File an Issue
+
+![Bugs](https://img.shields.io/github/issues/thai-programmers-usa/thai-programmers-usa.github.io/bug?label=Bugs) ![Feature Requests](https://img.shields.io/github/issues/thai-programmers-usa/thai-programmers-usa.github.io/feature-request?color=blue&label=Feature%20Requests)
+
+## Roadmap
+
+Here's a snippet of what's currently ✅ available or ❌ unavailable and what we have on our radar for the ⏩future:
+
+Current Features| Future Roadmap |
+|:--|:--|
+❌ Payment Transaction <br>  | ⏩ Sign up/ login <br> ⏩ Profile Edit <br> ⏩ Online name cards <br> 
+
+## Design Document
+You can find our design document [here](https://docs.google.com/document/d/1kbjxt3LQCJ6zL8TL6YDkc6zvmJGwN3lqoU6JE__83i0/edit).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
