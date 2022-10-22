@@ -6,7 +6,7 @@
       "lastName": "Contributor",
       "title": "Front-end Developer",
       "github": "www.github.com",
-      "linkedin": "www.linkedin.com",
+      "linkedIn": "www.linkedin.com",
       "avatar": null
     },
     {
@@ -15,7 +15,16 @@
       "lastName": "Chantha",
       "title": "Full Stack Engineer",
       "github": "https://github.com/KateChantha",
-      "linkedin": "https://www.linkedin.com/in/kate-chanthakaew/",
+      "linkedIn": "https://www.linkedin.com/in/kate-chanthakaew/",
+      "avatar": null
+    },
+    {
+      "id": 3,
+      "firstName": "Bay",
+      "lastName": "Chairangsaris",
+      "title": "Frontend Engineer",
+      "github": "https://github.com/BayLadyCoder",
+      "linkedIn": "https://www.linkedin.com/in/bayladycoder/",
       "avatar": null
     }
   ]
