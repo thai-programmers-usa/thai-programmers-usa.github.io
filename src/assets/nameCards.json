@@ -13,10 +13,48 @@
       "skills": ["css", "html", "JavaScript"],
       "interests": "cats",
       "socialMedias": {
-        "LinkedIn": "https://www.linkedin.com",
-        "Github": "https://github.com",
-        "Twitter": "https://twitter.com",
-        "Website": "https://www.awwwards.com"
+        "linkedIn": "https://www.linkedin.com",
+        "github": "https://github.com",
+        "twitter": "https://twitter.com",
+        "website": "https://www.awwwards.com"
+      }
+    },
+    {
+      "id": 2,
+      "firstName": "John",
+      "lastName": "Doe",
+      "nickName": "JD",
+      "avatar": null,
+      "title": "Front-End Engineer",
+      "company": "ABcorp",
+      "city": "New York",
+      "state": "NY",
+      "skills": ["css", "html", "JavaScript"],
+      "interests": "basket ball",
+      "socialMedias": {
+        "linkedIn": "https://www.linkedin.com",
+        "github": "https://github.com",
+        "twitter": null,
+        "website": "https://www.awwwards.com"
+      }
+    },
+    {
+      "id": 3,
+      "firstName": "Joy",
+      "lastName": "Dsglajvs",
+      "nickName": "Joy",
+      "avatar": null,
+      "title": "Ux/UI designer",
+      "company": "Modf Efs lkeew",
+      "city": "Dallas",
+      "state": "TX",
+      "skills": ["photoshop", "figma"],
+      "interests": "cooking",
+      "socialMedias": {
+        "linkedIn": "https://www.linkedin.com",
+        "github": null,
+        "twitter": null,
+        "website": "https://www.traveltexas.com/"
       }
     }
   ]
