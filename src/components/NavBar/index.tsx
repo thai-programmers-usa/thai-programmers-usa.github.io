@@ -12,8 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { URL_PATHS } from '../../pages/Router';
+import { Link } from 'react-router-dom';
 
-const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
@@ -87,9 +88,9 @@ function NavBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {URL_PATHS.map(({ label, path }) => (
+                <MenuItem key={label} onClick={handleCloseNavMenu}>
+                  <Link to={path}>{label}</Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -114,17 +115,14 @@ function NavBar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
+            {URL_PATHS.map(({ label, path }) => (
+              <Button key={label} component={Link} to={path} sx={{ my: 2, color: 'white', display: 'block' }}>
+                {label}
               </Button>
             ))}
           </Box>
 
+          {/* TODO: Profile dropdown menu */}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

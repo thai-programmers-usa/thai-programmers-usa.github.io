@@ -4,19 +4,30 @@ import Home from '../Home';
 import Login from '../Login';
 import NameCards from '../NameCards';
 
-export const URL_PATHS = {
-  HOME: '/',
-  LOGIN: 'login',
-  NAME_CARDS: 'name-cards',
-};
+export const URL_PATHS = [
+  {
+    label: 'HOME',
+    path: '/',
+    page: <Home />,
+  },
+  {
+    label: 'SING IN',
+    path: 'signin',
+    page: <Login />,
+  },
+  {
+    label: 'CARDS',
+    path: 'name-cards',
+    page: <NameCards />,
+  },
+];
 
 const Router = () => {
-  const { HOME, LOGIN, NAME_CARDS } = URL_PATHS;
   return (
     <Routes>
-      <Route path={HOME} element={<Home />} />
-      <Route path={LOGIN} element={<Login />} />
-      <Route path={NAME_CARDS} element={<NameCards />} />
+      {URL_PATHS.map(({ label, path, page }) => (
+        <Route key={label} path={path} element={page} />
+      ))}
     </Routes>
   );
 };
