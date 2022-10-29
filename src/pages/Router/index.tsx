@@ -11,14 +11,14 @@ export const URL_PATHS = [
     page: <Home />,
   },
   {
-    label: 'LOGIN',
-    path: 'login',
-    page: <Login />,
-  },
-  {
     label: 'CARDS',
     path: 'name-cards',
     page: <NameCards />,
+  },
+  {
+    label: 'LOGIN',
+    path: 'login',
+    page: <Login />,
   },
 ];
 
