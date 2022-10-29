@@ -11,8 +11,8 @@ export const URL_PATHS = [
     page: <Home />,
   },
   {
-    label: 'SING IN',
-    path: 'signin',
+    label: 'LOGIN',
+    path: 'login',
     page: <Login />,
   },
   {
