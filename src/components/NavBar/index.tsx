@@ -14,10 +14,19 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { URL_PATHS } from '../../pages/Router';
 import { Link } from 'react-router-dom';
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles({
+  root: {
+    backgroundColor: 'red',
+    color: (props: any) => props.color,
+  },
+});
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
+  const classes = useStyles({});
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
 
@@ -37,15 +46,15 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
+    <AppBar position='static' className={classes.root}>
+      <Container maxWidth='xl'>
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
-            variant="h6"
+            variant='h6'
             noWrap
-            component="a"
-            href="/"
+            component='a'
+            href='/'
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -61,17 +70,17 @@ function NavBar() {
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
+              size='large'
+              aria-label='account of current user'
+              aria-controls='menu-appbar'
+              aria-haspopup='true'
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color='inherit'
             >
               <MenuIcon />
             </IconButton>
             <Menu
-              id="menu-appbar"
+              id='menu-appbar'
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
@@ -97,10 +106,10 @@ function NavBar() {
           </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
-            variant="h5"
+            variant='h5'
             noWrap
-            component="a"
-            href=""
+            component='a'
+            href=''
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -116,7 +125,12 @@ function NavBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {URL_PATHS.map(({ label, path }) => (
-              <Button key={label} component={Link} to={path} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <Button
+                key={label}
+                component={Link}
+                to={path}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
                 {label}
               </Button>
             ))}
@@ -124,14 +138,14 @@ function NavBar() {
 
           {/* TODO: Profile dropdown menu */}
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <Tooltip title='Open settings'>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt='Remy Sharp' src='/static/images/avatar/2.jpg' />
               </IconButton>
             </Tooltip>
             <Menu
               sx={{ mt: '45px' }}
-              id="menu-appbar"
+              id='menu-appbar'
               anchorEl={anchorElUser}
               anchorOrigin={{
                 vertical: 'top',
@@ -147,7 +161,7 @@ function NavBar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography textAlign='center'>{setting}</Typography>
                 </MenuItem>
               ))}
             </Menu>
